@@ -1,7 +1,7 @@
 {
-    "compilerOptions":{
-        "lib":["esnext"],
-        "target":"esnext",
-        "strict":false
-    }
+  "compilerOptions": {
+    "lib": ["esnext", "dom"],
+    "target": "esnext",
+    "strict": false
+  }
 }
