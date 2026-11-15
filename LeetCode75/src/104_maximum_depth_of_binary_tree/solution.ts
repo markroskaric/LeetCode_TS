@@ -1,14 +1,4 @@
-class TreeNode {
-    val: number
-    left: TreeNode | null
-    right: TreeNode | null
-    constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
-        this.val = (val === undefined ? 0 : val)
-        this.left = (left === undefined ? null : left)
-        this.right = (right === undefined ? null : right)
-    }
-}
-
+import { TreeNode } from "../dataStruc";
 
 function maxDepth(root: TreeNode | null): number {
     if (root == null) {
@@ -21,7 +11,7 @@ function maxDepth(root: TreeNode | null): number {
     return 1 + max(leftDepth, rightDepth);
 };
 
-function max(i, b): number {
+function max(i:number, b:number): number {
     if (i > b) {
         return i;
     }
